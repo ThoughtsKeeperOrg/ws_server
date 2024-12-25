@@ -16,7 +16,8 @@ defmodule WsServer.Application do
       # Start a worker by calling: WsServer.Worker.start_link(arg)
       # {WsServer.Worker, arg},
       # Start to serve requests, typically the last entry
-      WsServerWeb.Endpoint
+      WsServerWeb.Endpoint,
+      {KafkaClient, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
