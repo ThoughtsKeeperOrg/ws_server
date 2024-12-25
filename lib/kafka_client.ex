@@ -31,6 +31,10 @@
     IO.inspect("Processing #{inspect(message)}")
     IO.inspect(message.data, label: "Got message")
     IO.puts("*************")
+    r = WsServerWeb.Endpoint.broadcast("room:lobby", "new_msg", Jason.decode!(message.data) )
+    IO.inspect(r)
+    IO.puts("*************")
+    
     message
   end
 end

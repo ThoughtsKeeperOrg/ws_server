@@ -10,7 +10,7 @@ defmodule WsServerWeb.UserSocket do
   # Uncomment the following line to define a "room:*" topic
   # pointing to the `WsServerWeb.RoomChannel`:
   #
-  # channel "room:*", WsServerWeb.RoomChannel
+  channel "room:*", WsServerWeb.RoomChannel
   #
   # To create a channel file, use the mix task:
   #
