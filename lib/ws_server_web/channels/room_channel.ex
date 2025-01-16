@@ -15,4 +15,3 @@ defmodule WsServerWeb.RoomChannel do
 end
 
 # https://hexdocs.pm/phoenix/channels.html
-
